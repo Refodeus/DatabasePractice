@@ -25,7 +25,7 @@ public partial class AppDbContext : DbContext
         return Clients.FromSqlRaw("SELECT * FROM get_avgv_check()");
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseNpgsql("Host=localhost;Port=5433;Database=project;Username=common_user;Password=15a16k;");
+        => optionsBuilder.UseNpgsql("Host=db;Port=5432;Database=project;Username=common_user;Password=15a16k;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

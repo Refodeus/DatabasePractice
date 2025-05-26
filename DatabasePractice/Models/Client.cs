@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DatabasePractice.Models;
 
+[Table("Clients")]
 public partial class Client
 {
     [Key]

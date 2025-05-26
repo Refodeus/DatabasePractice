@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DatabasePractice.Models;
 
+[Table("Orders")]
 public partial class Order
 {
     [Key]
